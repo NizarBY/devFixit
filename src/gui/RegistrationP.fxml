@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RegistrationControllerP">
+   <children>
+      <Pane layoutX="14.0" layoutY="22.0" prefHeight="375.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="img" fitHeight="399.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressource/Image/construction-site-plans.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="txtService" layoutX="231.0" layoutY="14.0" prefHeight="491.0" prefWidth="501.0" style="-fx-background-color: #80e5ff;">
+         <children>
+            <TextField fx:id="txtAdrs" layoutX="11.0" layoutY="187.0" prefHeight="26.0" prefWidth="168.0" promptText="Adresse...." style="-fx-background-color: #ffff;" />
+            <TextField fx:id="txtCin" layoutX="242.0" layoutY="105.0" prefHeight="26.0" prefWidth="221.0" promptText="CIN" style="-fx-background-color: #ffff;" />
+            <TextField fx:id="idPays" layoutX="11.0" layoutY="229.0" prefHeight="26.0" prefWidth="168.0" promptText="Pays" style="-fx-background-color: #ffff;" />
+            <TextField fx:id="txtTel" layoutX="11.0" layoutY="145.0" prefHeight="26.0" prefWidth="168.0" promptText="Tel ..." style="-fx-background-color: #ffff;" />
+            <TextField fx:id="txtLasteName" layoutX="11.0" layoutY="105.0" prefHeight="26.0" prefWidth="168.0" promptText="Prenom..." style="-fx-background-color: #ffff;" />
+            <TextField fx:id="txtName" layoutX="12.0" layoutY="66.0" prefHeight="26.0" prefWidth="168.0" promptText="Nom .." style="-fx-background-color: #ffff;">
+               <effect>
+                  <Glow level="0.0" />
+               </effect>
+               
+            </TextField>
+            <Label layoutX="14.0" layoutY="2.0" prefHeight="25.0" prefWidth="258.0" text="Inscrit Vous  en tant que Prestataire">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="37.0" text="Information personelles :" />
+            <Label layoutX="11.0" layoutY="265.0" text="information pour connecte " />
+            <TextField fx:id="txtLogin" layoutX="11.0" layoutY="289.0" prefHeight="26.0" prefWidth="240.0" promptText="Nom utilisateur" style="-fx-background-color: #ffff;" />
+            <TextField fx:id="txtPassword" layoutX="11.0" layoutY="321.0" prefHeight="26.0" prefWidth="240.0" promptText="Password" style="-fx-background-color: #ffff;" />
+            <DatePicker fx:id="txtDateN" layoutX="242.0" layoutY="66.0" prefHeight="26.0" prefWidth="221.0" promptText="date de naissance " />
+            <Button fx:id="btnAnnule" layoutX="207.0" layoutY="423.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="118.0" style="-fx-background-color: #ff0000;" text="Annule" />
+            <Button fx:id="btnVald" layoutX="34.0" layoutY="422.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="133.0" style="-fx-background-color: #3c7400;" text="Valider" />
+            <Button fx:id="btnCnx" layoutX="349.0" layoutY="423.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="133.0" style="-fx-background-color: #315098;" text="Connexion " />
+            <TextField fx:id="txtGrv" layoutX="242.0" layoutY="187.0" prefHeight="26.0" prefWidth="221.0" promptText="Grouvernement" style="-fx-background-color: #ffff;" />
+            <Label layoutX="254.0" layoutY="150.0" text="Genre" />
+            <RadioButton fx:id="btnRdHomme" layoutX="295.0" layoutY="150.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="96.0" selected="true" text="Homme">
+               <toggleGroup>
+                  <ToggleGroup fx:id="isGenre" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="btnRdFemme" layoutX="391.0" layoutY="150.0" mnemonicParsing="false" text="Femme" toggleGroup="$isGenre" />
+            <TextField fx:id="txtService" layoutX="242.0" layoutY="229.0" prefHeight="26.0" prefWidth="221.0" promptText="Service" style="-fx-background-color: #ffff;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
