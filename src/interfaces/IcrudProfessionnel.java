@@ -5,6 +5,7 @@
  */
 package interfaces;
 
+import entites.Professional;
 import entites.Service;
 
 /**
@@ -13,7 +14,7 @@ import entites.Service;
  */
 public interface IcrudProfessionnel {
     
-    public void addServices(Service s);
+    public void addProfessionnel(Professional pro);
     
     
 }

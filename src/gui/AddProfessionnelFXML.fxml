@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AddProfessionnelFXMLController">
+   <children>
+      <Button fx:id="btnAddPro" layoutX="171.0" layoutY="418.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="136.0" text="Ajouter" />
+      <Button fx:id="btnCancel" layoutX="398.0" layoutY="418.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="136.0" text="Annuler" />
+      <TextField fx:id="txtDomain" layoutX="172.0" layoutY="98.0" prefHeight="33.0" prefWidth="365.0" promptText="Domaine..." />
+      <TextArea fx:id="txtDescription" layoutX="171.0" layoutY="192.0" prefHeight="200.0" prefWidth="365.0" promptText="Description Service..." />
+      <TextField fx:id="txtSpeciality" layoutX="172.0" layoutY="144.0" prefHeight="33.0" prefWidth="365.0" promptText="Specialité..." />
+      <Pane layoutX="171.0" layoutY="35.0" prefHeight="49.0" prefWidth="365.0" style="-fx-background-color: #2E9AFE;">
+         <children>
+            <Label layoutX="85.0" layoutY="8.0" text="Ajoute Professionnel" textAlignment="CENTER" textFill="#ebe5e5" wrapText="true">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
