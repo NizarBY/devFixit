@@ -84,6 +84,16 @@ public class UserService implements IUserService {
             while (resultat.next()) {
                u.setName( resultat.getString("nom"));
                 u.setlastName(resultat.getString("Prenom"));
+                u.setCin(resultat.getInt("cin"));
+                u.setAdress(resultat.getString("adress"));
+                u.setPays(resultat.getString("pays"));
+                u.setLogin(resultat.getString("login"));
+                u.setPdw(resultat.getString("password"));
+                u.setTelephoneU(resultat.getInt("tel"));
+                u.setDateNaissance(resultat.getDate("dateNaissance"));
+                u.setGender(resultat.getBoolean("gender"));
+                u.setGovernorate(resultat.getString("governorate"));
+                
                 
                 
             }

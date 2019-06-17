@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DisplayUserController">
+   <children>
+      <Label layoutX="264.0" layoutY="34.0" text="Liste des utilisateurs">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewListUser" layoutX="16.0" layoutY="105.0" prefHeight="313.0" prefWidth="714.0">
+        <columns>
+          <TableColumn fx:id="clnFullName" prefWidth="202.0" text="Nom et Prénom" />
+          <TableColumn fx:id="clnCin" minWidth="0.0" prefWidth="95.0" text="CIN" />
+            <TableColumn fx:id="clnPays" minWidth="0.0" prefWidth="108.0" text="Pays" />
+            <TableColumn fx:id="clnGovernerat" minWidth="0.0" prefWidth="95.0" text="Gouvernerat" />
+            <TableColumn fx:id="clnAdresse" minWidth="0.0" prefWidth="108.0" text="Adresse" />
+            <TableColumn fx:id="clnTelephone" minWidth="0.0" prefWidth="108.0" text="Téléphone" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
