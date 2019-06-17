@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Who Am I
+ * 
  */
 public class RegistrationMainP extends Application {
     Switcher cw = new Switcher() ; 

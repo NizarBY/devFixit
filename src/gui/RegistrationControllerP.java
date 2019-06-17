@@ -29,7 +29,7 @@ import services.UserService;
 /**
  * FXML Controller class
  *
- * @author Who Am I
+ *
  */
 public class RegistrationControllerP implements Initializable {
     
