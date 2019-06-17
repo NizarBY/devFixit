@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="686.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gui.AddProfessionnelFXMLController">
+   <children>
+      <SplitMenuButton layoutX="37.0" layoutY="163.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" text="     Question /Réponse" textAlignment="CENTER">
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+            <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+         </items>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="37.0" layoutY="122.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" text="      Rechercher Article" textAlignment="CENTER">
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+            <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+         </items>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="37.0" layoutY="79.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" text="      Rechercher Service" textAlignment="CENTER">
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+            <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+         </items>
+      </SplitMenuButton>
+      <Pane layoutX="21.0" layoutY="26.0" prefHeight="469.0" prefWidth="200.0" style="-fx-background-color: #71ABF7;">
+         <children>
+            <SplitMenuButton layoutX="10.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" text="      Rechercher Service" textAlignment="CENTER">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </SplitMenuButton>
+            <SplitMenuButton layoutX="10.0" layoutY="93.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" text="      Rechercher Article" textAlignment="CENTER">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </SplitMenuButton>
+            <SplitMenuButton layoutX="10.0" layoutY="130.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" text="     Question /Réponse" textAlignment="CENTER">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </SplitMenuButton>
+            <SplitMenuButton layoutX="10.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" text="            Compte " textAlignment="CENTER">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </SplitMenuButton>
+         </children>
+      </Pane>
+      <Button layoutX="268.0" layoutY="352.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="136.0" text="Ajouter" />
+      <Button layoutX="495.0" layoutY="352.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="136.0" text="Annuler" />
+      <TextField layoutX="269.0" layoutY="81.0" prefHeight="33.0" prefWidth="365.0" promptText="Service..." />
+      <TextArea layoutX="268.0" layoutY="126.0" prefHeight="200.0" prefWidth="365.0" promptText="Description Service..." />
+   </children>
+</AnchorPane>
