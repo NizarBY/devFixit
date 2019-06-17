@@ -34,7 +34,7 @@ import services.UserService;
  *
  * @author Who Am I
  */
-public class RegistrationController implements Initializable {
+public class RegistrationProController implements Initializable {
     
     @FXML
     private TextField txtAdrs;
@@ -105,7 +105,7 @@ public class RegistrationController implements Initializable {
                 try {
                     Switcher.switchWindows(new GuiLogin(), (Stage) btnCnx.getScene().getWindow());
                 } catch (Exception ex) {
-                    Logger.getLogger(RegistrationController.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(RegistrationProController.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
             

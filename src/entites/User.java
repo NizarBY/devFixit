@@ -28,6 +28,14 @@ public class User {
     private String pays;
     private int cin;
     private String governorate;
+    private String fullName; 
+
+   
+    public User(String name, int telephoneU, String governorate) {
+        this.name = name;
+        this.telephoneU = telephoneU;
+        this.governorate = governorate;
+    }
 
     public int getCin() {
         return cin;
@@ -153,5 +161,7 @@ public class User {
     public void setProfessional(ArrayList< Professional> professional) {
         this.professional = professional;
     }
-
+ public String getFullName() {
+        return name+" "+lastName;
+    }
 }

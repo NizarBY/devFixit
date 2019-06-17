@@ -10,10 +10,12 @@ import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.SplitMenuButton;
 import javafx.stage.Stage;
 
 /**
@@ -45,6 +47,17 @@ public class HomeController implements Initializable {
     private Label lblCodeP;
     @FXML
     private Label lblCin;
+    private SplitMenuButton rchSer;
+    @FXML
+    private Label lbl;
+    @FXML
+    private Button btnCompte;
+    @FXML
+    private Button btnRecherche;
+    @FXML
+    private Button btnRechArticle;
+    @FXML
+    private Button btnQuR;
 
    
     
@@ -63,6 +76,8 @@ public class HomeController implements Initializable {
            }
            
        });
+     
+      
        this.u=GuiLoginController.getU();
        lblName.setText(u.getName());
      lblPrenom.setText(u.getlastName());
@@ -72,11 +87,19 @@ public class HomeController implements Initializable {
       lblGovernorate.setText(u.getGovernorate());
       lblCodeP.setText(String.valueOf(u.getCodePost()));
       lblTel.setText(String.valueOf(u.getTelephoneU()));
-      
-     
-     
-     
+ 
+          btnRecherche.setOnMousePressed(new EventHandler<Event>(){
+          @Override
+          public void handle(Event event) {
+                try {
+               Switcher.switchWindows(new RechercheServiceMain(), (Stage)rchSer.getScene().getWindow());
                
-    }    
+           } catch (Exception ex) {
+               Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+           }
+          }
+     });
+     
+                 }    
     
 }

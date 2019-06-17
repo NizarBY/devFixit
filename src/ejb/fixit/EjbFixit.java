@@ -6,9 +6,13 @@
 package ejb.fixit;
 
 
+import entites.ServiceProvider;
 import services.UserService;
 import entites.User;
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
+import services.RechercheProService;
 
 
 
@@ -24,6 +28,7 @@ public class EjbFixit {
     public static void main(String[] args) {
         // TODO code application logic here
         UserService us = new UserService();
+        RechercheProService rps = new RechercheProService();
        User u2 = new User();
        u2.setPdw("admin");
        u2.setLogin("AymenJava");
@@ -34,16 +39,15 @@ public class EjbFixit {
        u2.setCin(01234567);
  Date d = Date.valueOf("2019-06-20") ; 
 
+       List<ServiceProvider> lu = new ArrayList();
+       lu = rps.listServiceProvider("test", "admin");
        
+       for ( ServiceProvider u : lu){
+           System.out.println(u.getName());
+            System.out.println(u.getGovernorate());
+       }
+  
         
-       u2.setDateNaissance(d);
-       u2.setTelephoneU(21368562);
-       u2.setGender(true);
-       u2.setCodePost(2013);
-       u2.setPays("tunisie");
-       u2.setGovernorate("ben arous");
-       us.addUser(u2);
-        System.out.println(u2.getTelephoneU());
       
     }
     

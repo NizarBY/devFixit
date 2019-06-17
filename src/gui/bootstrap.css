@@ -1,0 +1,49 @@
+
+.table {
+  -fx-width: 100%;
+  -fx-margin-bottom: 1rem;
+   -fx-border-collapse: collapse;
+   -fx-color:#3E75E1;
+  }
+ 
+.label {
+  -fx-display: inline-block;
+  -fx-margin-bottom: 0.5rem;
+  
+}
+
+.button {
+  -fx-border-radius: 0;
+  -fx-overflow: visible;
+    -fx-border: none;
+  -fx-color: white;
+  
+  -fx-text-align: center;
+  -fx-text-decoration: none;
+  -fx-display: inline-block;
+  -fx-font-size: 16px;
+  -fx-margin: 4px 2px;
+  
+}
+.img-opacity {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.form-control{
+ -fx-display: block;
+  -fx-width: 100%;
+  -fx-height: calc(1.5em + 0.75rem + 2px);
+ 
+  -fx-font-size: 1rem;
+  -fx-font-weight: 400;
+  -fx-line-height: 1.5;
+  -fx-color: #495057;
+  -fx-background-color: #fff;
+  -fx-background-clip: padding-box;
+  -fx-border: 1px solid #ced4da;
+  -fx-border-radius: 0.25rem;
+  -fx-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .bg-img{
+  -fx-background-image: url("wp.jpg");
+  }

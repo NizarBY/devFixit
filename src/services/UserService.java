@@ -79,10 +79,13 @@ public class UserService implements IUserService {
         ArrayList<User> users = new ArrayList<>();
 
         try {
+            User u = new User() ;
             resultat = statement.executeQuery("SELECT * FROM user;");
             while (resultat.next()) {
-                String name = resultat.getString("nom");
-                System.out.println(name);
+               u.setName( resultat.getString("nom"));
+                u.setlastName(resultat.getString("Prenom"));
+                
+                
             }
         } catch (SQLException ex) {
             Logger.getLogger(UserService.class.getName()).log(Level.SEVERE, null, ex);

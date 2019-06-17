@@ -24,14 +24,14 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane layoutX="231.0" layoutY="14.0" prefHeight="562.0" prefWidth="492.0">
+      <Pane layoutX="231.0" layoutY="14.0" prefHeight="562.0" prefWidth="492.0" style="-fx-background-image: #80e5ff;">
          <children>
-            <TextField fx:id="txtAdrs" layoutX="11.0" layoutY="187.0" prefHeight="26.0" prefWidth="168.0" promptText="Adresse...." style="-fx-background-color: #ffff;" />
+            <TextField fx:id="txtAdrs" layoutX="11.0" layoutY="187.0" prefHeight="26.0" prefWidth="258.0" promptText="Adresse...." style="-fx-background-color: #ffff;" />
             <TextField fx:id="txtCin" layoutX="302.0" layoutY="255.0" prefHeight="26.0" prefWidth="168.0" promptText="CIN" style="-fx-background-color: #ffff;" />
             <TextField fx:id="idPays" layoutX="11.0" layoutY="260.0" prefHeight="26.0" prefWidth="168.0" promptText="Pays" style="-fx-background-color: #ffff;" />
-            <TextField fx:id="txtTel" layoutX="11.0" layoutY="145.0" prefHeight="26.0" prefWidth="168.0" promptText="Tel ..." style="-fx-background-color: #ffff;" />
-            <TextField fx:id="txtLasteName" layoutX="11.0" layoutY="105.0" prefHeight="26.0" prefWidth="168.0" promptText="Prenom..." style="-fx-background-color: #ffff;" />
-            <TextField fx:id="txtName" layoutX="12.0" layoutY="66.0" prefHeight="26.0" prefWidth="168.0" promptText="Nom .." style="-fx-background-color: #ffff;">
+            <TextField fx:id="txtTel" layoutX="11.0" layoutY="145.0" prefHeight="26.0" prefWidth="258.0" promptText="Tel ..." style="-fx-background-color: #ffff;" />
+            <TextField fx:id="txtLasteName" layoutX="11.0" layoutY="105.0" prefHeight="26.0" prefWidth="258.0" promptText="Prenom..." />
+            <TextField fx:id="txtName" layoutX="12.0" layoutY="66.0" prefHeight="26.0" prefWidth="258.0" promptText="Nom .." styleClass="form-control">
                <effect>
                   <Glow level="0.0" />
                </effect>
@@ -43,8 +43,8 @@
                </font>
             </Label>
             <Label layoutX="14.0" layoutY="37.0" text="Information personelles :" />
-            <TextField fx:id="txtCoPo" layoutX="183.0" layoutY="225.0" prefHeight="26.0" prefWidth="81.0" promptText="code postal" style="-fx-background-color: #ffff;" />
-            <Label layoutX="11.0" layoutY="288.0" text="information pour connecte " />
+            <TextField fx:id="txtCoPo" layoutX="190.0" layoutY="219.0" prefHeight="26.0" prefWidth="81.0" promptText="code postal" style="-fx-background-color: #ffff;" />
+            <Label layoutX="14.0" layoutY="300.0" text="information pour connecte " />
             <TextField fx:id="txtLogin" layoutX="11.0" layoutY="325.0" prefHeight="26.0" prefWidth="240.0" promptText="Nom utilisateur" style="-fx-background-color: #ffff;" />
             <TextField fx:id="txtPassword" layoutX="11.0" layoutY="380.0" prefHeight="26.0" prefWidth="240.0" promptText="Password" style="-fx-background-color: #ffff;" />
             <DatePicker fx:id="txtDateN" layoutX="304.0" layoutY="216.0" prefHeight="26.0" prefWidth="160.0" promptText="date de naissance " />
