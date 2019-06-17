@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gui.DisplayUserController">
+   <children>
+      <Label layoutX="264.0" layoutY="34.0" text="Liste des utilisateurs">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TableView layoutX="23.0" layoutY="105.0" prefHeight="200.0" prefWidth="714.0">
+        <columns>
+          <TableColumn prefWidth="202.0" text="Nom et Prénom" />
+          <TableColumn minWidth="0.0" prefWidth="95.0" text="CIN" />
+            <TableColumn minWidth="0.0" prefWidth="108.0" text="Pays" />
+            <TableColumn minWidth="0.0" prefWidth="95.0" text="Gouvernerat" />
+            <TableColumn minWidth="0.0" prefWidth="108.0" text="Adresse" />
+            <TableColumn minWidth="0.0" prefWidth="108.0" text="Téléphone" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
